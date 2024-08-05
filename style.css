@@ -1,50 +1,58 @@
-body{
-    
-background-image: url(./1000057522.png);
-background-size: 100%;
-
+/* Estilo geral do corpo da página */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden; /* Evita barras de rolagem horizontais */
+    background-image: url('1000057522.png'); /* Define a imagem de fundo */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Evita a repetição da imagem de fundo */
 }
 
-button {
-width: 100%;
-background-color: transparent;
-border: 0;
-font-size: x-large;
-margin-top: 40%;
-text-align: center;
+/* Estilo do cabeçalho */
+header {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 100vh; /* Ocupa toda a altura da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
 }
 
+/* Estilo da navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Estilo dos links */
 a {
     text-decoration: none;
+    color: #a0a0a0;
+    font-size: 2rem; /* Tamanho de fonte padrão */
+    padding: 0 20px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
     color: white;
 }
 
-a:hover{
-
-    color:white
-
-
+/* Responsividade para telas médias (tablets) */
+@media (max-width: 768px) {
+    a {
+        font-size: 1.5rem; /* Reduz o tamanho da fonte para telas médias */
+        padding: 0 15px;
+    }
 }
 
-nav{
-
-    height: 100%;
-    width: 70%;
-    min-width: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: auto;
-
-     }
-
-   a{
-
-   position: relative;
-   text-decoration: none;
-   font-family:  'Poppins',sans-serif;
-   color: #a0a0a0;
-   font-size: 25px;
-   letter-spacing: 0.5px;
-   padding: 0 10px;
+/* Responsividade para telas pequenas (smartphones) */
+@media (max-width: 480px) {
+    a {
+        font-size: 1.2rem; /* Reduz o tamanho da fonte para telas pequenas */
+        padding: 0 10px;
     }
+}
